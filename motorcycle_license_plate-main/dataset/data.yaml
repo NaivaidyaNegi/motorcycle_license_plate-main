@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['With Helmet', 'Without Helmet', 'licence']
+
+roboflow:
+  workspace: helmet-detection-cknan
+  project: helmet-and-no-helmet-rider-detection
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/helmet-detection-cknan/helmet-and-no-helmet-rider-detection/dataset/6

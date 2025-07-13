@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Violation System</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-gray-800">Traffic Violation System</h1>
+  </header>
+  <main class="flex flex-1 justify-center items-start mt-10">
+    <div class="bg-white p-8 rounded-2xl shadow-md w-full max-w-2xl">
+      <h2 class="text-xl font-semibold mb-6">Submit Video Evidence</h2>
+      <form action="/upload" method="POST" enctype="multipart/form-data" class="flex flex-col gap-6">
+        <div>
+          <label for="video" class="block text-gray-700 font-medium mb-2">Upload Video Evidence</label>
+          <input type="file" id="video" name="video" accept="video/*" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div>
+          <label for="description" class="block text-gray-700 font-medium mb-2">Description (Optional)</label>
+          <textarea id="description" name="description" rows="4" placeholder="Describe the violation..." class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+        </div>
+
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-xl transition">Submit Report</button>
+      </form>
+    </div>
+  </main>
+  <footer class="bg-white shadow p-4 text-center text-sm text-gray-500 mt-10">
+    &copy; 2025 Traffic Authority. All rights reserved.
+  </footer>
+
+</body>
+</html>
