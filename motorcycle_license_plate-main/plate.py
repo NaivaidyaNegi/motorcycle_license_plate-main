@@ -13,7 +13,7 @@ def recognize_plate(image_path):
             'https://api.platerecognizer.com/v1/plate-reader/',
             data=dict(regions=regions),  # Optional
             files=dict(upload=fp),
-            headers={'Authorization': 'Token d5c3645660ca28781afb68cc079b50e594c2d5f3'}
+            headers={'Authorization': 'Token}
         )
     
     # Check if the response is successful

@@ -6,14 +6,14 @@ def email_alert(subject,body,to):
     msg.set_content(body)
     msg['subject'] = subject
     msg['to'] = to
-    msg['from'] = 'youpp208@gmail.com'
+    msg['from'] = 'email@gmail.com'
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('youpp208@gmail.com', 'tsscafuyathxauua')
+    server.login('email@gmail.com', 'apiker')
     server.send_message(msg)
     server.quit()
     print("Email sent successfully to",to)
 
-#     email_alert("Test Email", "This is a test email", "naivaidyanegi@gmail.com"
+#   
 
 
